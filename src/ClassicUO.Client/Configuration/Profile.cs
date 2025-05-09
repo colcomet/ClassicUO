@@ -56,17 +56,17 @@ namespace ClassicUO.Configuration
         // sounds
         public bool EnableSound { get; set; } = true;
         public int SoundVolume { get; set; } = 100;
-        public bool EnableMusic { get; set; } = true;
+        public bool EnableMusic { get; set; } = false;
         public int MusicVolume { get; set; } = 100;
         public bool EnableFootstepsSound { get; set; } = true;
-        public bool EnableCombatMusic { get; set; } = true;
+        public bool EnableCombatMusic { get; set; } = false;
         public bool ReproduceSoundsInBackground { get; set; }
 
         // fonts and speech
         public byte ChatFont { get; set; } = 1;
         public int SpeechDelay { get; set; } = 100;
         public bool ScaleSpeechDelay { get; set; } = true;
-        public bool SaveJournalToFile { get; set; } = true;
+        public bool SaveJournalToFile { get; set; } = false;
         public bool ForceUnicodeJournal { get; set; }
         public bool IgnoreAllianceMessages { get; set; }
         public bool IgnoreGuildMessages { get; set; }
@@ -144,7 +144,7 @@ namespace ClassicUO.Configuration
         public bool AlwaysRun { get; set; }
         public bool AlwaysRunUnlessHidden { get; set; }
         public bool SmoothMovements { get; set; } = true;
-        public bool HoldDownKeyTab { get; set; } = true;
+        public bool HoldDownKeyTab { get; set; } = false;
         public bool HoldShiftForContext { get; set; } = false;
         public bool HoldShiftToSplitStack { get; set; } = false;
 
@@ -180,9 +180,9 @@ namespace ClassicUO.Configuration
         public bool CastSpellsByOneClick { get; set; }
         public bool BuffBarTime { get; set; }
         public bool FastSpellsAssign { get; set; }
-        public bool AutoOpenDoors { get; set; }
-        public bool SmoothDoors { get; set; }
-        public bool AutoOpenCorpses { get; set; }
+        public bool AutoOpenDoors { get; set; } = true;
+        public bool SmoothDoors { get; set; } = true;
+        public bool AutoOpenCorpses { get; set; } = false;
         public int AutoOpenCorpseRange { get; set; } = 2;
         public int CorpseOpenOptions { get; set; } = 3;
         public bool SkipEmptyCorpse { get; set; }
@@ -233,7 +233,7 @@ namespace ClassicUO.Configuration
         public bool ShadowsStatics { get; set; } = true;
         public int TerrainShadowsLevel { get; set; } = 15;
         public int AuraUnderFeetType { get; set; } // 0 = NO, 1 = in warmode, 2 = ctrl+shift, 3 = always
-        public bool AuraOnMouse { get; set; } = true;
+        public bool AuraOnMouse { get; set; } = false;
         public bool AnimatedWaterEffect { get; set; } = false;
 
         public bool PartyAura { get; set; }
@@ -280,7 +280,7 @@ namespace ClassicUO.Configuration
 
         public bool UseSmoothBoatMovement { get; set; } = false;
 
-        public bool IgnoreStaminaCheck { get; set; } = false;
+        public bool IgnoreStaminaCheck { get; set; } = true;
 
         public bool ShowJournalClient { get; set; } = true;
         public bool ShowJournalObjects { get; set; } = true;

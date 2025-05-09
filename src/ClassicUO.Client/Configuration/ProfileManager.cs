@@ -44,6 +44,11 @@ namespace ClassicUO.Configuration
             CurrentProfile.ServerName = servername;
             CurrentProfile.CharacterName = charactername;
 
+            /* These are overrides for Rucci's shard.*/
+            CurrentProfile.IgnoreStaminaCheck = true;
+            CurrentProfile.AuraOnMouse = false;
+            /* End overrides for Rucci's shard.*/
+
             ValidateFields(CurrentProfile);
         }
 
